@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MessageBoard</title>
+</head>
+
+<body>
+  <div id="dvHeader">
+    <p>
+    <h1>MessageBoard</h1>
+    </p>
+  </div>
+  <div id="dvMessagesList">
+    {% if messages_list %}
+    <p>
+    <ul>
+      {% for message in messages_list %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    </p>
+    {% else %}
+    <p><b>No messages.</b></p>
+    {% endif %}
+  </div>
+  <div id="dvForm">
+    <form action="/save_message" method="post">
+      <label for="edEmail">Email: </label>
+      <input type="text" name="edEmail" id="edEmail" placeholder="Email..." />
+      <br>
+      <label for="edPassword">Password: </label>
+      <input type="password" name="edPassword" id="edPassword" />
+      <br>
+      <label for="edMessage">Message:</label>
+      <input type="text" name="edMessage" id="edMessage" placeholder="Message..." />
+      <input type="submit" value="Enviar">
+
+    </form>
+  </div>
+  <div id="dvErrorMsg" style="font-weight: bold; color: white; background-color: red">
+    {% with error_messages = get_flashed_messages() %}
+    {% if error_messages %}
+    {% for message in error_messages %}
+    {{ message }}
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </div>
+
+</body>
+
+</html>
+<!-- {% extends "header.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>All Activities</h1>
+<ul>
+  {% for activity in activities %}
+  <li>{{ activity.name }} - {{ activity.description }}</li>
+  {% endfor %}
+</ul>
+{% endblock %} -->

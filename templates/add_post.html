@@ -1,0 +1,11 @@
+{% extends "header.html" %}
+{% block title %}Add Activity{% endblock %}
+{% block content %}
+<h1>Add Post</h1>
+<form action="/add_post" method="post">
+    <label for="poContent">Contenido:</label>
+    <input type="text" id="poContent" name="poContent">
+    <br>
+    <input type="submit" value="Añadir Comentario">
+</form>
+{% endblock %}

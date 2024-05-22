@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+{% block title %}Add Activity{% endblock %}
+{% block content %}
+<h1>Añadir actividad</h1>
+<div id="dvForm">
+    <form action="/add_activity" method="post">
+        <label for="acName">Nombre:</label>
+        <input type="text" id="acName" name="acName">
+        <br>
+        <label for="acDescription">Descripcion:</label>
+        <input type="text" id="acDescription" name="acDescription">
+        <br>
+        <input type="submit" value="Añadir actividad">
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+{% block title %}Add Activity{% endblock %}
+{% block content %}
+<h1>Editar Actividad</h1>
+<div id="dvForm">
+    <form method="POST">
+        <label for="acName">Nombre:</label>
+        <input type="text" id="acName" name="acName" value="{{activity._name}}">
+        <br>
+        <label for="acDescription">Descripcion:</label>
+        <!-- <textarea type="text" id="acDescription" name="acDescription" value="{{activity._description}}"> -->
+        <textarea name="acDescription" id="acDescription">{{activity._description}}</textarea>
+        <br>
+        <input type="submit" value="Editar actividad">
+    </form>
+</div>
+{% endblock %}

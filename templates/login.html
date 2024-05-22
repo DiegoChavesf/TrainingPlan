@@ -1,0 +1,16 @@
+{% extends "header.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<h1>Login</h1>
+<div id="dvForm">
+    <form action="/login" method="post">
+        <label for="logUsername">Usuario: </label>
+        <input type="text" name="logUsername" id="logUsername" placeholder="Usuario..." />
+
+        <label for="logPassword">Contraseña: </label>
+        <input type="password" name="logPassword" id="logPassword" placeholder="Contraseña..." />
+        <input type="submit" value="Entrar">
+    </form>
+</div>
+
+{% endblock %}
