@@ -1,172 +1,118 @@
 /* Estilos generales para el contenedor de la navegación */
 nav {
     background-color: #333;
-    /* Color de fondo de la barra de navegación */
     padding: 10px 20px;
-    /* Espaciado interno para la barra de navegación */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra para darle un poco de profundidad */
 }
 
 /* Estilos para la lista de navegación */
 nav ul {
     list-style-type: none;
-    /* Quitar los puntos de la lista */
     margin: 0;
-    /* Eliminar el margen */
     padding: 0;
-    /* Eliminar el padding */
     display: flex;
-    /* Usar flexbox para una disposición horizontal */
     align-items: center;
-    /* Alinear los elementos en el centro verticalmente */
 }
 
 /* Estilos para los elementos de la lista */
 nav ul li {
     margin: 0 15px;
-    /* Espaciado entre los elementos de la lista */
 }
 
 /* Estilos especiales para el enlace de Logout */
 nav ul li.logout {
     margin-left: auto;
-    /* Empujar Logout a la izquierda */
 }
 
 /* Estilos para los enlaces de navegación */
 nav ul li a {
     color: white;
-    /* Color del texto */
     text-decoration: none;
-    /* Quitar el subrayado */
     font-weight: bold;
-    /* Hacer el texto en negrita */
     padding: 8px 12px;
-    /* Espaciado interno para los enlaces */
     border-radius: 4px;
-    /* Bordes redondeados */
     transition: background-color 0.3s ease;
-    /* Transición suave para los efectos */
 }
 
 /* Estilos para los enlaces al pasar el ratón */
 nav ul li a:hover {
     background-color: #575757;
-    /* Color de fondo al pasar el ratón */
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
     nav ul {
         flex-wrap: wrap;
-        /* Permitir que los elementos se envuelvan en varias líneas si es necesario */
         justify-content: space-between;
-        /* Distribuir los elementos en todo el espacio disponible */
     }
 
     nav ul li {
         margin: 10px 5px;
-        /* Ajustar el espaciado para pantallas más pequeñas */
     }
 }
 
 /* Estilos para el encabezado */
 h1 {
     text-align: center;
-    /* Centrar el texto */
     color: #333;
-    /* Color del texto */
     margin-bottom: 20px;
-    /* Espacio debajo del encabezado */
 }
 
 /* Estilos para el contenedor del formulario */
 #dvForm {
     width: 300px;
-    /* Ancho fijo del formulario */
     margin: 0 auto;
-    /* Centrar el formulario en la página */
     padding: 20px;
-    /* Espaciado interno */
     border: 1px solid #ccc;
-    /* Borde del contenedor */
     border-radius: 10px;
-    /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra para dar profundidad */
     background-color: #f9f9f9;
-    /* Color de fondo del contenedor */
 }
 
 /* Estilos para las etiquetas */
 #dvForm label {
     display: block;
-    /* Hacer que las etiquetas sean bloques */
     margin-bottom: 8px;
-    /* Espaciado debajo de las etiquetas */
     color: #555;
-    /* Color del texto */
 }
 
 /* Estilos para los campos de entrada */
 #dvForm input[type="text"],
 #dvForm input[type="password"] {
     width: calc(100% - 20px);
-    /* Ancho del 100% menos el padding */
     padding: 8px 10px;
-    /* Espaciado interno */
     margin-bottom: 15px;
-    /* Espaciado debajo de los campos */
     border: 1px solid #ccc;
-    /* Borde de los campos */
     border-radius: 5px;
-    /* Bordes redondeados */
     box-sizing: border-box;
-    /* Incluir el padding y el borde en el ancho total */
     font-size: 16px;
-    /* Tamaño de la fuente */
     background-color: #fff;
-    /* Color de fondo */
     transition: border-color 0.3s ease;
-    /* Transición para el color del borde */
 }
 
 /* Estilos para el botón de envío */
 #dvForm input[type="submit"] {
     width: 100%;
-    /* Ancho del 100% */
     padding: 10px;
-    /* Espaciado interno */
     border: none;
-    /* Sin borde */
     border-radius: 5px;
-    /* Bordes redondeados */
     background-color: #333;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
     font-size: 16px;
-    /* Tamaño de la fuente */
     cursor: pointer;
-    /* Cambiar el cursor al pasar por encima */
     transition: background-color 0.3s ease;
-    /* Transición para el color de fondo */
 }
 
 /* Estilos para los campos de entrada al enfocarse */
 #dvForm input[type="text"]:focus,
 #dvForm input[type="password"]:focus {
     border-color: #333;
-    /* Color del borde al enfocarse */
     outline: none;
-    /* Quitar el contorno por defecto */
 }
 
 /* Estilos para el botón de envío al pasar el ratón */
 #dvForm input[type="submit"]:hover {
     background-color: #555;
-    /* Color de fondo al pasar el ratón */
 }
 
 #dvForm textarea {
@@ -181,55 +127,35 @@ h1 {
 
 #dvForm button {
     width: 100%;
-    /* Ancho del 100% */
     padding: 10px;
-    /* Espaciado interno */
     border: none;
-    /* Sin borde */
     border-radius: 5px;
-    /* Bordes redondeados */
     background-color: #333;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
     font-size: 16px;
-    /* Tamaño de la fuente */
     cursor: pointer;
-    /* Cambiar el cursor al pasar por encima */
     transition: background-color 0.3s ease;
-    /* Transición para el color de fondo */
 }
 
 #dvForm button:hover {
     background-color: #555;
-    /* Color de fondo al pasar el ratón */
 }
 
 /* Estilos para el botón de envío */
 #add button {
     width: 25%;
-    /* Ancho del 100% */
     padding: 10px;
-    /* Espaciado interno */
     border: none;
-    /* Sin borde */
     border-radius: 5px;
-    /* Bordes redondeados */
     background-color: #333;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
     font-size: 16px;
-    /* Tamaño de la fuente */
     cursor: pointer;
-    /* Cambiar el cursor al pasar por encima */
     transition: background-color 0.3s ease;
-    /* Transición para el color de fondo */
 }
 
 #add button:hover {
     background-color: #555;
-    /* Color de fondo al pasar el ratón */
 }
 
 /* Estilos para el encabezado */
@@ -278,9 +204,7 @@ p {
 
 .button-container {
     display: flex;
-    /* Utilizar flexbox para colocar los botones en la misma línea */
     justify-content: center;
-    /* Centrar los botones horizontalmente dentro del contenedor */
 }
 
 /* Estilos para los botones */
@@ -288,7 +212,6 @@ p {
 .edit-button,
 .delete-btn {
     width: auto;
-    /* Cambiado a 'auto' para que el ancho se ajuste al contenido */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -296,28 +219,22 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-flex;
-    /* Cambiado a 'inline-flex' para alinear los botones en la misma línea */
     align-items: center;
-    /* Alineación vertical del contenido */
     margin-right: 10px;
-    /* Espacio entre los botones */
 }
 
 .like-button {
     background-color: green;
-    /* Color verde para el botón de Me gusta */
     color: white;
 }
 
 .edit-button {
     background-color: blue;
-    /* Color azul para el botón de Editar */
     color: white;
 }
 
 .delete-btn {
     background-color: red;
-    /* Color rojo para el botón de Borrar */
     color: white;
 }
 
@@ -333,7 +250,6 @@ p {
 .edit-button span,
 .delete-btn span {
     margin-left: 5px;
-    /* Espacio entre el icono y el texto */
 }
 
 /* Estilos para el texto en el botón de Me gusta */
@@ -348,11 +264,8 @@ p {
     .edit-button,
     .delete-btn {
         width: 100%;
-        /* Cambiado a 100% para ocupar todo el ancho en pantallas pequeñas */
         margin-right: 0;
-        /* Quitado el margen entre los botones en pantallas pequeñas */
         margin-bottom: 10px;
-        /* Añadido margen inferior para separar los botones en pantallas pequeñas */
     }
 }
 
