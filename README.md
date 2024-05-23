@@ -1,4 +1,4 @@
-# Documentación del Proyecto TraininPlan
+# Documentación del Proyecto TrainingPlan
 
 ## Introducción
 Este es un proyecto web de gestión de actividades desarrollado con Flask, Flask-Login y Sirope. La aplicación permite a los usuarios registrarse, iniciar sesión, añadir actividades, dar "me gusta" a las actividades y gestionar sus actividades. La base de datos se maneja a través de Sirope, un sistema de almacenamiento y recuperación de objetos.
